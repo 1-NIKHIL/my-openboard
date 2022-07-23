@@ -5,7 +5,7 @@ const app=express(); //Initailize and server ready
 
 app.use(express.static("public"));
 
- let port=3005;
+ let port= process.env.PORT || 3005;
 // app.use(express.static("public"));
 
 let server=app.listen(port,() =>{
